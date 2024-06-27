@@ -108,7 +108,7 @@ const Room = () => {
     socket.on("peer:nego:needed", handleNegoNeedIncomming)
     socket.on("peer:nego:final",handleNegoNeedFinal)
     // handleNewUserEmails();
-    // printNewUserEmails();
+    printNewUserEmails();
     return () => {
       socket.off("user:joined", handleNewUserJoined);
       socket.off("show:all:emails", handleNewUserEmails);
